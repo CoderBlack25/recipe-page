@@ -1,0 +1,168 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Outfit";
+  src: url("assets/fonts/outfit/Outfit-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "Young-Serif";
+  src: url("assets/fonts/young-serif/YoungSerif-Regular.ttf");
+}
+
+body {
+  background: hsl(30, 54%, 90%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Outfit";
+  color: hsl(30, 10%, 34%);
+}
+
+.container {
+  background: hsl(0, 0%, 100%);
+  margin: 0 auto;
+  width: 42%;
+  padding: 3rem;
+  border-radius: 1rem;
+}
+
+.image > img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 0.5rem;
+}
+
+.second > h1,
+.forth > h2,
+.fifth > h2,
+.sixth > h2 {
+  font-family: "Young-Serif";
+  color: hsl(14, 45%, 36%);
+}
+
+.second > h1 {
+  color: hsl(24, 5%, 18%);
+}
+
+.third {
+  background: hsl(330, 100%, 98%);
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+}
+
+.third ul > li {
+  margin-left: 1.5rem;
+  line-height: 2;
+  list-style-type: square;
+  list-style-position: outside;
+  padding-left: 0.85rem;
+}
+
+.third ul > li::marker {
+  color: hsl(332, 51%, 32%);
+}
+
+.third > p {
+  color: hsl(332, 51%, 32%);
+  font-weight: 700;
+}
+
+.forth {
+  border-bottom: 1px solid hsla(30, 10%, 34%, 0.3);
+}
+
+.forth ul > li {
+  line-height: 2;
+  list-style-position: outside;
+  list-style-type: square;
+  padding-left: 0.85rem;
+}
+
+.forth > ul {
+  padding-left: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.forth ul > li::marker {
+  color: hsl(14, 45%, 36%);
+}
+
+.fifth {
+  border-bottom: 1px solid hsla(30, 10%, 34%, 0.3);
+}
+
+.fifth ol > li {
+  line-height: 2;
+  list-style-position: outside;
+  padding-left: 0.85rem;
+}
+
+.fifth > ol {
+  padding-left: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.fifth ol > li::marker {
+  color: hsl(14, 45%, 36%);
+  font-weight: 700;
+}
+
+table {
+  padding: 0 2rem;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td {
+  padding: 1rem 0 1rem 2rem;
+}
+
+tr {
+  border-bottom: 1px solid hsla(30, 10%, 34%, 0.3);
+}
+
+tr:last-child {
+  border-bottom: none;
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 100%;
+    border-radius: 0;
+    padding: 0;
+  }
+
+  .image > img {
+    border-radius: 0;
+  }
+
+  .second,
+  .third,
+  .forth,
+  .fifth,
+  .sixth {
+    margin: 3rem;
+  }
+}
+
+.values {
+  color: hsl(14, 45%, 36%);
+  font-weight: 700;
+  padding-left: 100px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  padding: 2rem;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
